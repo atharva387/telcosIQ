@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Code Services - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="css/scrollIt.min.js"></script>
+    <script src="css/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <!-- Popup Modal -->
+    <div id="get-in-touch-popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>Get in Touch</h2>
+            <form id="contact-form" name="contact-form">
+                <!-- action="https://script.google.com/macros/s/AKfycbwTpRa7v6LNnc0SY1Rl3ouoJrLpfQI3OUO5rmQ20cD6FaGg0jXw2ybDEVILM908x6Ac/exec" -->
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-input">
+                        <select id="country-code" name="country-code" required>
+                            <option value="+1">+1 (United States)</option>
+                            <option value="+44">+44 (United Kingdom)</option>
+                            <option value="+91">+91 (India)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+81">+81 (Japan)</option>
+                            <option value="+49">+49 (Germany)</option>
+                            <option value="+33">+33 (France)</option>
+                            <option value="+39">+39 (Italy)</option>
+                            <option value="+86">+86 (China)</option>
+                            <option value="+7">+7 (Russia)</option>
+                            <option value="+55">+55 (Brazil)</option>
+                            <option value="+27">+27 (South Africa)</option>
+                            <option value="+34">+34 (Spain)</option>
+                            <option value="+64">+64 (New Zealand)</option>
+                            <option value="+52">+52 (Mexico)</option>
+                            <option value="+46">+46 (Sweden)</option>
+                            <option value="+41">+41 (Switzerland)</option>
+                            <option value="+31">+31 (Netherlands)</option>
+                            <option value="+32">+32 (Belgium)</option>
+                            <option value="+47">+47 (Norway)</option>
+                            <option value="+48">+48 (Poland)</option>
+                            <option value="+20">+20 (Egypt)</option>
+                            <option value="+62">+62 (Indonesia)</option>
+                            <option value="+82">+82 (South Korea)</option>
+                            <option value="+60">+60 (Malaysia)</option>
+                            <option value="+65">+65 (Singapore)</option>
+                            <option value="+34">+34 (Spain)</option>
+                            <option value="+66">+66 (Thailand)</option>
+                            <option value="+90">+90 (Turkey)</option>
+                            <option value="+971">+971 (United Arab Emirates)</option>
+                            <option value="+358">+358 (Finland)</option>
+                            <option value="+45">+45 (Denmark)</option>
+                            <option value="+63">+63 (Philippines)</option>
+                            <option value="+54">+54 (Argentina)</option>
+                            <option value="+30">+30 (Greece)</option>
+                            <option value="+351">+351 (Portugal)</option>
+                            <option value="+1">+1 (Canada)</option>
+                            <option value="+591">+591 (Bolivia)</option>
+                            <option value="+94">+94 (Sri Lanka)</option>
+                            <option value="+92">+92 (Pakistan)</option>
+                            <option value="+92">+92 (Bangladesh)</option>
+
+                            <!-- Add more country codes as needed -->
+                        </select>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">What are you looking for?</label>
+                    <textarea id="message" name="message" placeholder="Describe your requirements" required></textarea>
+                </div>
+                <button class="get-in-touch-btn" id="get-in-touch-button "><a href="success.html"> Get In Touch
+                    </a></button>
+            </form>
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <ul class="top-bar-links">
+                <li><a href="tel:+919518943376" class="glow-blink">Call Us +919518943376</a></li>
+                <li><a href="#livechat" class="glow-blink">Live Chat</a></li>
+                <li><a href="#partner" class="glow-blink">Become a Partner</a></li>
+                <li><a href="blog.html" class="glow-blink">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="header-container" data-aos="zoom-in">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logos/LOGO.png" alt="Company Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- hero  section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-heading" data-aos="zoom-in">Delight your customers</h1>
+            <h2 class="hero-subheading" data-aos="zoom-in">
+                with intelligent conversations.
+            </h2>
+            <h3 class="hero-highlight">
+                <span class="highlighted-word" data-aos="zoom-in">Securely</span>
+            </h3>
+            <a href="https://api.whatsapp.com/send?phone=+919518943376&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202"
+                class="contact-button" data-aos="zoom-in">
+                Contact an expert
+                <span class="arrow">&#8594;</span>
+            </a>
+        </div>
+    </section>
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner-image"></div>
+    </section>
+    <section class="info-section">
+        <div class="info-content">
+            <h1>Build customer relationships over every possible channel</h1>
+            <p>Deliver true conversational AI experiences on the most robust platform.</p>
+        </div>
+    </section>
+    <!-- API cards -->
+    <section class="services-container" data-aos="fade-up">
+        <div class="api-cards">
+            <div class="card card-sms" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/sms.png" alt="SMS API Logo">
+                    <h3>SMS API</h3>
+                </div>
+            </div>
+            <div class="card card-mms" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/mms.png" alt="MMS API Logo">
+                    <h3>MMS API</h3>
+                </div>
+            </div>
+            <div class="card card-voice" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/voice.png" alt="Voice API Logo">
+                    <h3>Voice API</h3>
+                </div>
+            </div>
+            <div class="card card-email" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/gmail.png" alt="Email API Logo">
+                    <h3>Email API</h3>
+                </div>
+            </div>
+            <div class="card card-rcs" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/sms.png" alt="RCS API Logo">
+                    <h3>RCS API</h3>
+                </div>
+            </div>
+            <div class="card card-livechat" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/lc.png" alt="Live Chat API Logo">
+                    <h3>Live Chat API</h3>
+                </div>
+            </div>
+            <div class="card card-messenger" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/messenger.png" Messenger API Logo">
+                    <h3>Messenger API</h3>
+                </div>
+            </div>
+            <div class="card card-viber" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/viber.webp" alt="Viber API Logo">
+                    <h3>Viber API</h3>
+                </div>
+            </div>
+            <div class="card card-whatsapp" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/whatsapp.png" alt="WhatsApp Business API Logo">
+                    <h3>WhatsApp Business API</h3>
+                </div>
+            </div>
+            <div class="card card-apple-messages" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/apple.png" alt="Apple Messages for Business Logo">
+                    <h3>Apple Messages for Business</h3>
+                </div>
+            </div>
+            <div class="card card-instagram" data-aos="fade-up">
+                <div class="card-content">
+                    <img src="logos/instagram.png" alt="Instagram Logo">
+                    <h3>Instagram</h3>
+                </div>
+            </div>
+            <div class="card card-explore" data-aos="fade-up">
+                <a href="services.html" class="card-content">
+                    <img src="logos/fwa.png" alt="Explore All Channels Logo">
+                    <h3>Explore All Channels</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- cloud -->
+    <section class="cloud-contact-center-section">
+        <div class="cloud-contact-center-container" data-aos="fade-up">
+            <h2>Our Cloud Contact Center Services</h2>
+            <p>At Short Code Services, our Cloud Contact Center provides a comprehensive suite of solutions designed to
+                enhance customer interactions. Leveraging the latest cloud technologies, we deliver seamless, efficient,
+                and cost-effective communication channels for businesses of all sizes.</p>
+
+            <div class="contact-center-service-item">
+                <div class="cloud-icon" data-aos="fade-right">
+                    <img src="logos/icon1.png" alt="Omni-channel Support">
+                </div>
+                <div class="cloud-description" data-aos="fade-left">
+                    <h3 data-aos="fade-left">Omni-channel Support</h3>
+                    <p data-aos="fade-left">Engage customers across multiple channels—voice, email, chat, and social
+                        media—ensuring a unified and consistent experience, no matter how they choose to reach out.</p>
+                </div>
+            </div>
+            <div class="contact-center-service-item">
+                <div class="cloud-icon" data-aos="fade-right">
+                    <img src="logos/icon2.png" alt="Scalable Solutions">
+                </div>
+                <div class="cloud-description">
+                    <h3 data-aos="fade-left">Scalable Solutions</h3>
+                    <p data-aos="fade-left">Our cloud contact center can easily scale with your business, adapting to
+                        fluctuations in demand and ensuring you only pay for what you use.</p>
+                </div>
+            </div>
+            <div class="contact-center-service-item" data-aos="fade-left">
+                <div class="cloud-icon" data-aos="fade-right">
+                    <img src="logos/icon3.png" alt="Advanced Analytics">
+                </div>
+                <div class="cloud-description">
+                    <h3 data-aos="fade-left">Advanced Analytics</h3>
+                    <p data-aos="fade-left">Utilize real-time analytics and reporting tools to gain insights into
+                        customer behavior, agent performance, and overall service efficiency.</p>
+                </div>
+            </div>
+            <div class="contact-center-service-item" data-aos="fade-right">
+                <div class="cloud-icon" data-aos="fade-right">
+                    <img src="logos/icon4.png" alt="24/7 Availability">
+                </div>
+                <div class="cloud-description">
+                    <h3 data-aos="fade-left">24/7 Availability</h3>
+                    <p data-aos="fade-left">Ensure your customers receive support whenever they need it with our
+                        always-on cloud contact center services, available 24/7.</p>
+                </div>
+            </div>
+            <div class="cloud-cta">
+                <h3>Transform Your Customer Experience</h3>
+                <p>Contact us today to discover how our Cloud Contact Center can help you enhance customer engagement
+                    and satisfaction.</p>
+                <a href="contact.html" class="contact-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!-- services section -->
+    <section class="services-container">
+        <!-- Connect Box -->
+        <a href="connect.html" class="service-link">
+            <div class="service-box ">
+                <div class="service-icon">
+                    <img src="logos/compressed-original (1).webp" alt="Connect">
+                </div>
+                <h2>Connect</h2>
+                <p>Connect is trusted by businesses worldwide to reach their customers quickly and reliably with mobile
+                    messaging.</p>
+            </div>
+        </a>
+        <!-- Interact Box -->
+        <a href="connect.html" class="service-link">
+            <div class="service-box ">
+                <div class="service-icon">
+                    <img src="logos/compressed-original (2).webp" alt="Interact">
+                </div>
+                <h2>Interact</h2>
+                <p>Experience the power of automated messaging and live agent support on mobile channels to create deep
+                    engagement with your customers.</p>
+            </div>
+        </a>
+        <!-- Transact Box -->
+        <a href="connect.html" class="service-link">
+            <div class="service-box ">
+                <div class="service-icon">
+                    <img src="logos/compressed-original (3).webp" alt="Transact">
+                </div>
+                <h2>Transact</h2>
+                <p>With Transact, businesses can easily accept secure payments in messaging channels, without the need
+                    for any coding.</p>
+            </div>
+        </a>
+    </section>
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <img src="logos/icon1.png" alt="Quality Service">
+                </div>
+                <div class="benefit-text">
+                    <h3>Quality Shortcode Services</h3>
+                    <p>We offer top-notch shortcode solutions tailored for maximum efficiency and reliability.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <img src="logos/icon2.png" alt="Cloud Services">
+                </div>
+                <div class="benefit-text">
+                    <h3>Robust Cloud Services</h3>
+                    <p>Experience seamless cloud services that scale with your business needs.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <img src="logos/icon3.png" alt="24/7 Support">
+                </div>
+                <div class="benefit-text">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is always ready to assist you, day or night.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">
+                    <img src="logos/icon4.png" alt="Easy Integrations">
+                </div>
+                <div class="benefit-text">
+                    <h3>Easy Integrations</h3>
+                    <p>Integrate our services effortlessly with your existing systems for enhanced productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us -->
+    <section id="about-us" class="about-us">
+        <div class="about-container">
+            <h2 class="about-title">About Us</h2>
+            <div class="team">
+                <div class="member founder">
+                    <a href="jyoti.html" class="service-link">
+                        <img src="logos/jyoti.png" alt="Founder Jyoti" class="profile-pic">
+                        <h3>Jyoti Bajpai</h3>
+                        <h3>
+                            <div id="typed-text" class="designation"></div>
+                        </h3>
+                        <p>Meet Jyoti, the visionary behind our shortcode messaging solutions. With a passion for
+                            technology and a commitment to simplicity, she strives to make communication effortless for
+                            everyone.</p>
+                    </a>
+                </div>
+                <div class="member investor">
+                    <a href="bh.html" class="service-link">
+                        <img src="logos/bh.png" alt="Investor BH" class="profile-pic">
+                        <h3>Bharatbhushan Kolhe</h3>
+                        <h3>
+                            <div id="typed-text1" class="designation"></div>
+                        </h3>
+                        <p>BH brings valuable insights and resources to our team. He believes in the potential of our
+                            innovative shortcode technology and supports our mission to enhance digital communication.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <p>Contact us: <a href="mailto:info@shortcodeservices.com">info@shortcodeservices.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+919518943376&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="float" target="_blank" >
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.card').forEach(card => {
+                const color = card.getAttribute('data-color');
+                if (color) {
+                    card.style.setProperty('--card-background', color);
+                }
+            });
+        });
+    </script>
+    <script src="script.js">  </script>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed.js Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Initialize AOS and Typed.js -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+        });
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text1', {
+            strings: ['Director & CFO', 'Head of E Shop', 'Financial Expert'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text', {
+            strings: ['Director', 'Distribution Expert', 'Supply Chain Leader'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66fd499fe5982d6c7bb7a211/1i96mf5r6';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

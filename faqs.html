@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Code Services - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="css/scrollIt.min.js"></script>
+    <script src="css/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <ul class="top-bar-links">
+                <li><a href="tel:+1234567890" class="glow-blink">Call Us</a></li>
+                <li><a href="#livechat" class="glow-blink">Live Chat</a></li>
+                <li><a href="#partner" class="glow-blink">Become a Partner</a></li>
+                <li><a href="blog.html" class="glow-blink">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logos/LOGO.png" alt="Company Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>What is a short code?</h3>
+            <p>A short code is a 5-6 digit number used for sending and receiving SMS and MMS messages.</p>
+
+            <h3>How can I lease a short code?</h3>
+            <p>You can lease a short code through a service provider or directly with a carrier.</p>
+
+            <h3>Difference between shared and dedicated short codes?</h3>
+            <p>Shared short codes are used by multiple businesses, while dedicated short codes are exclusively yours.
+            </p>
+
+            <h3>What is the cost of getting a short code?</h3>
+            <p>The cost varies depending on the type (dedicated or shared) and usage.</p>
+
+            <h3>Industries that benefit the most?</h3>
+            <p>Retail, healthcare, education, and marketing industries commonly use short codes for customer engagement.
+            </p>
+
+            <h3>How long does it take to activate a short code?</h3>
+            <p>Short code activation can take anywhere from 4-8 weeks depending on the carrier approval process.</p>
+
+            <h3>Is there support for global short codes?</h3>
+            <p>Yes, some service providers offer global short codes, but availability varies by country.</p>
+
+            <h3>What are the compliance requirements for using a short code?</h3>
+            <p>Short code users must comply with carrier regulations, including opt-in and opt-out mechanisms for end
+                users.</p>
+
+            <h3>Can I transfer my short code to another provider?</h3>
+            <p>Yes, it is possible to transfer a short code, but it requires coordination between carriers and
+                providers.</p>
+        </div>
+    </section>
+
+    <script>
+        // Fade-in animation for FAQ content
+        const fadeInElements = document.querySelectorAll('.faqs h2, .faqs h3, .faqs p');
+        window.addEventListener('scroll', () => {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                    el.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <p>Contact us: <a href="mailto:info@shortcodeservices.com">info@shortcodeservices.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

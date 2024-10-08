@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Jyoti Bajpai</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="jyoti.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header" data-aos="fade-down">
+    <h1>Jyoti Bajpai</h1>
+    <div id="typed-text" class="designation"></div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" data-aos="fade-up">
+    <div class="profile-img">
+      <img src="logos/jyoti.png" alt="Jyoti Bajpai">
+    </div>
+    <div class="about-info">
+      <h2>About Me</h2>
+      <p>Having graduated in Commerce and completed her MBA in Finance, Jyoti joined the group in its early days as a
+        trainee accountant. With her enthusiasm, thirst for knowledge, and drive, she has donned many caps, from
+        starting as a trainee to now heading our latest venture, E Shop.</p>
+      <p>Her attention to detail, involvement in every aspect of the firm, and passion for the business make her a great
+        leader. She has proved her expertise in various domains like financial controllership, banking, accounting,
+        planning, analysis, and audit. Her relentless journey of the last 15 years has made her an asset to our
+        organization.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2 data-aos="fade-down">Skills & Expertise</h2>
+    <div class="skills-list">
+      <div class="skill" data-aos="fade-right">Financial Controllership</div>
+      <div class="skill" data-aos="fade-left">Banking & Accounting</div>
+      <div class="skill" data-aos="fade-right">Financial Planning & Analysis</div>
+      <div class="skill" data-aos="fade-left">Internal & External Audits</div>
+    </div>
+  </section>
+
+  <!-- Career Journey Section -->
+  <section class="journey" data-aos="fade-left">
+    <h2>Career Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <span class="year">2008</span>
+        <div class="info">Joined the company as a Trainee Accountant after completing her MBA in Finance.</div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <span class="year">2012</span>
+        <div class="info">Promoted to Senior Accountant, leading the finance team and overseeing financial reporting.
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <span class="year">2015</span>
+        <div class="info">Appointed as Financial Controller, managing all financial aspects of the organization.</div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <span class="year">2018</span>
+        <div class="info">Led the financial team for the launch of the company's new e-commerce platform, E Shop.</div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <span class="year">2022</span>
+        <div class="info">Appointed Director & CFO, leading the financial strategy and corporate governance of the
+          company.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Jyoti Bajpai | Director & CFO</p>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Typed.js Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Initialize AOS and Typed.js -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1200,
+    });
+
+    // Initialize Typed.js
+    var typed = new Typed('#typed-text', {
+      strings: ['Director & CFO', 'Head of E Shop', 'Financial Expert'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Code Services - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="css/scrollIt.min.js"></script>
+    <script src="css/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <ul class="top-bar-links">
+                <li><a href="tel:+1234567890" class="glow-blink">Call Us</a></li>
+                <li><a href="#livechat" class="glow-blink">Live Chat</a></li>
+                <li><a href="#partner" class="glow-blink">Become a Partner</a></li>
+                <li><a href="blog.html" class="glow-blink">Blog</a></li>
+                <li><a href="contact.html" class="glow-blink">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logos/LOGO.png" alt="Company Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- about us -->
+    <section class="about-us-section">
+        <div class="about-us-container">
+            <h2 class="about-us-title">About Us</h2>
+            <p class="about-us-description">
+                Founded by Mr. Bharatbhushan Kolhe and Ms.Jyoti Bajpai, our company has positioned itself as a
+                pioneering leader in the field of short code services. With a passion for enhancing customer engagement,
+                we specialize in providing dedicated and shared short code messaging solutions that empower businesses
+                to connect with their audiences more effectively. Since our inception, we have been committed to driving
+                innovation in communication technology, adapting to the evolving landscape of digital marketing </p>
+            <h3 class="about-us-subtitle">Our Vision</h3>
+            <p class="about-us-vision">
+                Our mission is to empower businesses with reliable, scalable, and innovative short code solutions. We
+                strive to enhance customer communication, enabling companies of all sizes to engage their clients
+                through effective SMS and MMS messaging campaigns. By leveraging our expertise, we aim to transform the
+                way businesses interact with their customers, fostering loyalty and driving growth.
+            </p>
+            <h3 class="about-us-subtitle">Our Values</h3>
+            <ul class="about-us-values">
+                <li>Integrity</li>
+                <li>Customer Satisfaction</li>
+                <li>Innovation</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <div class="about-container">
+            <h2 class="about-title">Our Team</h2>
+            <div class="team">
+                <div class="member founder">
+                    <a href="jyoti.html" class="service-link">
+                        <img src="logos/jyoti.png" alt="Founder Jyoti" class="profile-pic">
+                        <h3>Jyoti Bajpai</h3>
+                        <h3>
+                            <div id="typed-text" class="designation"></div>
+                        </h3>
+                        <p>Meet Jyoti, the visionary behind our shortcode messaging solutions. With a passion for
+                            technology and a commitment to simplicity, she strives to make communication effortless for
+                            everyone.</p>
+                    </a>
+                </div>
+                <div class="member investor">
+                    <a href="bh.html" class="service-link">
+                        <img src="logos/bh.png" alt="Investor BH" class="profile-pic">
+                        <h3>Bharatbhushan Kolhe</h3>
+                        <h3>
+                            <div id="typed-text1" class="designation"></div>
+                        </h3>
+                        <p>BH brings valuable insights and resources to our team. He believes in the potential of our
+                            innovative shortcode technology and supports our mission to enhance digital communication.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <p>Contact us: <a href="mailto:info@shortcodeservices.com">info@shortcodeservices.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+        });
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text1', {
+            strings: ['Director & CFO', 'Head of E Shop', 'Financial Expert'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text', {
+            strings: ['Director', 'Distribution Expert', 'Supply Chain Leader'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+    </script>
+</body>
+
+</html>

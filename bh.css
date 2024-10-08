@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #4b6cb7;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  font-family: 'Alex Brush', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.designation {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #fff;
+}
+
+.profile-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-info {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.skills {
+  background: #e3e7f1;
+  padding: 50px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.skill {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.journey {
+  background: #fff;
+  padding: 50px;
+}
+
+.journey h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline-item .year {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b6cb7;
+  padding-right: 10px;
+}
+
+.timeline-item p {
+  margin: 0;
+}
+
+.info {
+  margin-left: 150px;
+  vertical-align: center;
+
+}
+
+/* Ensure AOS is styled properly */
+[data-aos] {
+  opacity: 0;
+  /* Start hidden */
+  transition: opacity 0.5s ease-in-out;
+  /* Transition for the opacity */
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  /* Fade in effect */
+}
+
+
+.hobbies {
+  background: #e8eaf6;
+  padding: 50px;
+  text-align: center;
+}
+
+.hobbies h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.hobby {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .skills-list,
+  .hobbies-list {
+    grid-template-columns: 1fr;
+    /* Stack items on smaller screens */
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .timeline-item .year {
+    left: -30px;
+    /* Adjust position of year for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 36px;
+    /* Smaller header font size for mobile */
+  }
+
+  .header .designation {
+    font-size: 18px;
+    /* Adjusted font size for mobile */
+  }
+
+  .profile-img img {
+    width: 150px;
+    /* Smaller image on mobile */
+    height: 150px;
+    /* Maintain aspect ratio */
+  }
+
+  .about-info {
+    padding: 0 20px;
+    /* Added padding for mobile */
+  }
+
+  .journey h2,
+  .skills h2,
+  .hobbies h2 {
+    font-size: 28px;
+    /* Adjust heading sizes for mobile */
+  }
+
+  .skills .skill,
+  .hobbies .hobby {
+    padding: 15px;
+    /* Smaller padding for mobile items */
+  }
+}

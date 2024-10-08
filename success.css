@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+.page-container {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.success-container {
+    text-align: center;
+}
+
+.checkmark-animation {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: relative;
+    animation: pop 0.5s ease forwards;
+}
+
+.checkmark {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    opacity: 0;
+    animation: checkmark 0.5s ease forwards 0.5s;
+}
+
+.checkmark-stem {
+    width: 8px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transform: rotate(45deg);
+}
+
+.checkmark-kick {
+    width: 8px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transform: rotate(135deg);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+p {
+    color: #555;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

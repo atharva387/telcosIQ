@@ -1,0 +1,126 @@
+/* General Styles for the Service Pages */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+.services-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.services-header h1 {
+    font-size: 36px;
+}
+
+.services-header p {
+    font-size: 18px;
+}
+
+/* Services List on Index Page */
+.services-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h2 {
+    font-size: 24px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+.service-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+/* Service Details Page */
+.service-details {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-details h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.service-details p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.feature-list, .usage-examples {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.feature-list li, .usage-examples li {
+    margin-bottom: 10px;
+}
+
+.pricing-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.pricing-table th {
+    background-color: #f2f2f2;
+}
+
+.service-image {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Animations via AOS */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: none;
+}
+
+

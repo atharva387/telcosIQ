@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Submission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="success.css">
+</head>
+
+<body class="page-container">
+    <div class="success-container animate__animated animate__fadeIn">
+        <div class="checkmark-animation animate__animated animate__zoomIn">
+            <div class="checkmark-circle">
+                <div class="checkmark">
+                    <div class="checkmark-stem"></div>
+                    <div class="checkmark-kick"></div>
+                </div>
+            </div>
+        </div>
+        <h1>Success!</h1>
+        <p>Your form has been successfully submitted.</p>
+        <button id="reloadButton" class="animate__animated">Go Home</button>
+    </div>
+    <script>
+        document.getElementById("reloadButton").addEventListener("click", function () {
+            // Redirect to home page or any other action
+            window.location.href = "index.html"; // Replace with your home page URL
+        });
+
+    </script>
+</body>
+
+</html>
